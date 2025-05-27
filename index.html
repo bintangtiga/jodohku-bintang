@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jodohku by BintangTiga GitHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bgMusic" loop autoplay hidden>
+    <source src="bg-music.mp3" type="audio/mpeg">
+  </audio>
+  <div class="container">
+    <h1>Jodohku</h1>
+    <p>by BintangTiga GitHub</p>
+
+    <input type="text" id="name" placeholder="Nama kamu...">
+    <input type="date" id="birthDate">
+    <button onclick="playClick(); cariJodoh()">Cari Jodoh!</button>
+    <button onclick="toggleMusic()">Play/Pause Musik</button>
+
+    <div id="hasil" class="result-box"></div>
+    <h3>Riwayat Jodoh:</h3>
+    <ul id="riwayat"></ul>
+  </div>
+
+  <audio id="clickSound">
+    <source src="click.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
